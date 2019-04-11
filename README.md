@@ -18,6 +18,19 @@ thumbsup --theme cards
 ![albums](docs/albums.png)
 ![media](docs/media.png)
 
+## Options
+
+You can use override the following variables to customise this theme:
+
+```less
+@body-background: #fff;
+@body-color: #444;
+@header-color: #444;
+@nav-border: #ddd;
+```
+
+You can add them to your own LESS file, and run thumbsup with `--theme-style custom.less`.
+
 ## Developing
 
 Testing the theme
