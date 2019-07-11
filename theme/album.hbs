@@ -8,13 +8,20 @@
       <link rel="stylesheet" href="{{relative 'public/lightgallery/css/lightgallery.css'}}" />
       <link rel="stylesheet" href="{{relative 'public/videojs/video-js.min.css'}}" />
       <link rel="stylesheet" href="{{relative 'public/lightgallery/css/lg-exif.min.css'}}" />
+      <link rel="stylesheet" href="{{relative 'public/leaflet/leaflet/leaflet.css'}}" />
+      <link rel="stylesheet" href="{{relative 'public/leaflet/cluster/MarkerCluster.css'}}" />	
+      <link rel="stylesheet" href="{{relative 'public/leaflet/photo/Leaflet.Photo.css'}}" /> 
       <link rel="stylesheet" href="{{relative 'public/core.css'}}" />
       <link rel="stylesheet" href="{{relative 'public/theme.css'}}" />
   </head>
 
   <body>
 
-    {{> content}}
+    <div id="container">
+      {{> content}}
+      {{> leaflet}}
+    </div>
+
     {{> video-loader}}
 
     <!-- jQuery -->
@@ -27,7 +34,6 @@
     <script src="{{relative 'public/lightgallery/js/lg-pager.js'}}"></script>
     <script src="{{relative 'public/lightgallery/js/lg-thumbnail.js'}}"></script>
     <script src="{{relative 'public/lightgallery/js/lg-video.js'}}"></script>
-    <script src="{{relative 'public/lightgallery/js/lg-exif.min.js'}}"></script>
 
     <script>
       $(document).ready(function() {
