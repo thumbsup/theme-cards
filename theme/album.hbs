@@ -22,11 +22,7 @@
     <!-- VideoJS -->
     <script src="{{relative 'public/videojs/video.min.js'}}"></script>
     <!-- LightGallery -->
-    <script src="{{relative 'public/lightgallery/js/lightgallery.js'}}"></script>
-    <script src="{{relative 'public/lightgallery/js/lg-autoplay.js'}}"></script>
-    <script src="{{relative 'public/lightgallery/js/lg-pager.js'}}"></script>
-    <script src="{{relative 'public/lightgallery/js/lg-thumbnail.js'}}"></script>
-    <script src="{{relative 'public/lightgallery/js/lg-video.js'}}"></script>
+    <script src="{{relative 'public/lightgallery/js/lightgallery-all.min.js'}}"></script>
     <script src="{{relative 'public/lightgallery/js/lg-exif.min.js'}}"></script>
 
     <script>
@@ -37,7 +33,9 @@
           loop : false,
           download: true,
           counter: true,
-          videojs: true
+          videojs: true,
+          fullScreen: true,
+          zoom: true
         });
       });
     </script>
